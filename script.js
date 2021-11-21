@@ -30,7 +30,7 @@ function get(name){
 //v4.1 ShareList via bitly api
 function passlist()
 {
-var url = "YOURGITHUBURL/index.html?list="+ shoppinglist;   //replace YOURGITHUBURL with your Github repo URL example: Konkollist.github.io
+var url = "https://stittlist.github.io/index.html?list="+ shoppinglist;   //replace YOURGITHUBURL with your Github repo URL example: Konkollist.github.io
    var accessToken = "849e4ba1d30ef52844ab29e157ebece3f404b49a"; //replace with your NEW Bit.ly TOKEN
    var params = {
        "long_url" : url          
