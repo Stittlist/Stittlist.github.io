@@ -6,7 +6,7 @@
 
 //v3.4 Add popup describing app when visitors load webpage the first time
 window.onload = function() {
-    alert("Welcome to 'Shopping List' App!\n\nCreated by Rock Valley College\n**Javascript(Web233) Students**\n\nQuestions?\nemail Professor Chuck Konkol\nc.konkol@rockvalleycollege.edu\n\nRegister @ RockValleyCollege.edu");
+    alert("Welcome to 'Movie List' App!\n\nCreated by Rock Valley College\n**Javascript(Web233) Students**\n\nQuestions?\nemail Professor Chuck Konkol\nc.konkol@rockvalleycollege.edu\n\nRegister @ RockValleyCollege.edu");
     populateshoppinglistonload();
     displayShoppinglists();
     clearFocus();
@@ -76,7 +76,7 @@ function copyToClipboard(text) {
 
 function about()
 {
-    alert("Welcome to 'Shopping List' App!\n\nCreated by Rock Valley College\n**Javascript(Web233) Students**\n\nQuestions?\nemail Professor Chuck Konkol\nc.konkol@rockvalleycollege.edu\n\nRegister @ RockValleyCollege.edu");
+    alert("Welcome to 'Movie List' App!\n\nCreated by Rock Valley College\n**Javascript(Web233) Students**\n\nQuestions?\nemail Professor Chuck Konkol\nc.konkol@rockvalleycollege.edu\n\nRegister @ RockValleyCollege.edu");
     
 }
 //read cookie and return
@@ -330,4 +330,17 @@ function deleteShoppingCart(position) {
   addtocart.splice(position, 1);
   displayShoppinglists();
   displayShoppingCart();
+}
+
+function copyToClipboard(text) {
+ var passbyurl = document.createElement("textarea");
+ passbyurl.value = text;
+ document.body.appendChild(passbyurl);
+ passbyurl.focus();
+ passbyurl.select();
+ document.execCommand("copy");
+ document.body.removeChild(passbyurl);
+ alert("URL has been copied. Ready to share: " + text);
+ //window.prompt("Copy & Share List!", text);
+  
 }
