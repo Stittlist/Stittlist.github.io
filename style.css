@@ -21,6 +21,7 @@ a:active {
 body {
     font: 14px/21px"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
     background-color: #F5F5DC;
+    bg-color: #B22222;
 }
 #footer {
     margin:2px; background:#34ebc9; color:#ffdb17;text-align:center;font-size:x-small;
