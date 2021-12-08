@@ -6,7 +6,7 @@
 
 //v3.4 Add popup describing app when visitors load webpage the first time
 window.onload = function() {
-    alert("Welcome to 'Movie List' App!\n\nCreated by Rock Valley College\n**Javascript(Web233) Students**\n\nQuestions?\nemail Professor Chuck Konkol\nc.konkol@rockvalleycollege.edu\n\nRegister @ RockValleyCollege.edu");
+    alert("Welcome to the 'Movie List' App!\n\nCreated by Michael Stitt\n** A Javascript(Web233) Student**\n\nQuestions?\nemail met at\ns0387660@student.rockvalleycollege.edu\n\nRegister @ RockValleyCollege.edu");
     populateshoppinglistonload();
     displayShoppinglists();
     clearFocus();
@@ -76,7 +76,7 @@ function copyToClipboard(text) {
 
 function about()
 {
-    alert("Welcome to 'Movie List' App!\n\nCreated by Rock Valley College\n**Javascript(Web233) Students**\n\nQuestions?\nemail Professor Chuck Konkol\nc.konkol@rockvalleycollege.edu\n\nRegister @ RockValleyCollege.edu");
+    alert("Welcome to the 'Movie List' App!\n\nCreated by Michael Stitt\n** A Javascript(Web233) Student**\n\nQuestions?\nemail met at\ns0387660@student.rockvalleycollege.edu\n\nRegister @ RockValleyCollege.edu");
     
 }
 //read cookie and return
@@ -306,7 +306,7 @@ TheList += TheRow;
 }
 if (arrayLength > 0)
 {
-  document.getElementById("labels").innerHTML = 'Purchased';
+  document.getElementById("labels").innerHTML = 'Watched Movies';
   document.getElementById("MyCart").innerHTML = '<ul>' + TheList + '</ul>';
 }else{
   document.getElementById("labels").innerHTML = '';
